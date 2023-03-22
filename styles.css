@@ -1,0 +1,392 @@
+    @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+    @import url(https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #header {
+        background-image: url(DSC_0159.JPG);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: soft-light;
+    }
+    
+    .navbar {
+        padding: 8px 50px;
+    }
+    
+    .logo {
+        border-radius: 50%;
+    }
+    
+    div.container a {
+        color: #FFF;
+        text-decoration: none;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+    }
+    
+    div.circleBehind a:before,
+    div.circleBehind a:after {
+        position: absolute;
+        top: 21px;
+        left: 49.5%;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        transform: translateX(-50%) translateY(-50%) scale(0.8);
+        border-radius: 50%;
+        background: transparent;
+        content: "";
+        opacity: 0;
+        transition: all 0.1s;
+        z-index: -1;
+    }
+    
+    div.circleBehind a:after {
+        border-width: 2px;
+        transition: all 0.4s;
+    }
+    
+    div.circleBehind a:hover:before {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+    
+    div.circleBehind a:hover:after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%) scale(1.3);
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(1.3);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(1.3);
+        -ms-transform: translateX(-50%) translateY(-50%) scale(1.3);
+        -o-transform: translateX(-50%) translateY(-50%) scale(1.3);
+    }
+    
+    .banner {
+        padding: 12.3% 0% 20% 5%;
+        color: aliceblue;
+        text-align: center;
+    }
+    
+    .banner h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        font-family: 'EB Garamond', serif;
+    }
+    
+    .banner button {
+        border-radius: 25px;
+        font-size: 1rem;
+        border: solid 0px;
+        font-weight: 500;
+        padding: 1% 2.7%;
+        background-color: #970019;
+        color: aliceblue;
+        opacity: 0.5;
+    }
+    
+    .banner button:hover {
+        opacity: 1;
+    }
+    
+    .card h5 {
+        text-align: center;
+    }
+    
+    #School_levels {
+        padding: 5%;
+        background-color: #f4f2f2;
+    }
+    
+    .heading {
+        text-align: center;
+        font-family: 'EB Garamond', serif;
+        padding: 20px;
+    }
+    
+    #Curriculum .card {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    #Curriculum .card-title {
+        color: aliceblue;
+    }
+    
+    #Curriculum {
+        padding: 5%;
+        background-image: url(education-day-arrangement-table-with-copy-space.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: soft-light;
+    }
+    
+    #Curriculum .heading {
+        color: aliceblue;
+    }
+    
+    .collapsible {
+        background-color: #970019;
+        color: aliceblue;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        opacity: 0.4;
+    }
+    
+    .collapsible:focus {
+        outline: none;
+    }
+    
+    .collapsible:hover {
+        opacity: 1;
+    }
+    
+    #Curriculum .card-title {
+        margin-bottom: 20px;
+    }
+    
+    .content {
+        padding: 5px 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #bebebe;
+        opacity: 0.7;
+    }
+    
+    .Collapsible_div {
+        margin-top: 10px;
+    }
+    
+    #footer {
+        padding: 5%;
+        background-color: #f4f2f2;
+    }
+    
+    #footer ul {
+        list-style: none;
+    }
+    
+    #footer button {
+        border-radius: 25px;
+        font-size: 1rem;
+        border: solid 0px;
+        font-weight: 500;
+        padding: 4% 10%;
+        background-color: #970019;
+        color: aliceblue;
+        opacity: 0.7;
+        margin-bottom: 5%;
+    }
+    
+    #footer button:hover {
+        opacity: 1;
+    }
+    
+    #footer a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #footer a:hover {
+        color: #970019;
+    }
+    
+    #copywrite {
+        padding: 1% 5%;
+        text-align: center;
+        background-color: rgb(151, 0, 25, 0.8);
+        color: #f4f2f2;
+    }
+    
+    #copywrite h1 {
+        margin-left: 5px;
+    }
+    
+    #copywrite .fa {
+        margin-left: 10px;
+    }
+    
+    .icons .fa {
+        font-size: 20px;
+    }
+    
+    .icons a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+    .icons .fa-facebook-official:hover {
+        color: #4267B2;
+    }
+    
+    .icons .fa-instagram:hover {
+        color: #f566e2;
+    }
+    
+    .icons .fa-linkedin-square:hover {
+        color: #0077b5;
+    }
+    
+    .icons .fa-youtube-play:hover {
+        color: #FF0000;
+    }
+    /* Yearly_plan_page */
+    
+    #Yearly_header {
+        background-image: url(kimberly-farmer-lUaaKCUANVI-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.1);
+        background-blend-mode: soft-light;
+    }
+    
+    #Yearly_header .banner {
+        padding: 14.1622685% 0% 21% 4.5%;
+    }
+    
+    #Classes {
+        padding: 5%;
+    }
+    
+    #Classes .collapsible {
+        opacity: 1;
+        background-color: #970019;
+        font-size: 20px;
+    }
+    
+    #Classes .content {
+        background-color: #f4f2f2;
+        opacity: 1;
+    }
+    
+    #Classes .Collapsible_div {
+        margin-left: 6%;
+        max-width: 90%;
+    }
+    
+    #Classes .fas {
+        margin-right: 15px;
+    }
+    
+    #Classes a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    #Classes a:hover {
+        color: #970019;
+    }
+    
+    #Classes .content {
+        padding: 5% 13%;
+    }
+    /* Exams Time Tables */
+    
+    #Exams_header {
+        background-image: url(final-exam-results-test-reading-books-words-concept.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: soft-light;
+        background-blend-mode: soft-light;
+    }
+    
+    #Exams_header .banner {
+        padding: 14.15% 0% 21% 4.5%;
+    }
+    
+    #Exams_Timetable {
+        padding: 5% 5% 10% 5%;
+    }
+    
+    #Exams_Timetable h1 {
+        text-align: center;
+    }
+    
+    #Exams_Timetable table {
+        letter-spacing: 2px;
+        border: solid #000;
+    }
+    
+    #Exams_Timetable td {
+        border: solid #000;
+        padding: 5px;
+        background-color: #f8f8f8;
+    }
+    
+    #Exams_Timetable th {
+        border: solid #000;
+        padding: 5px;
+        background-color: #AC3347;
+        color: #FFF;
+    }
+    /* Holiday_Plan */
+    
+    #Holiday_header {
+        background-image: url(travel-concept-with-landmarks.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: soft-light;
+        background-blend-mode: soft-light;
+    }
+    
+    #Holiday_header .banner {
+        padding: 14.15% 0% 21% 4.5%;
+    }
+    
+    #Holiday_Timetable {
+        padding: 5% 5% 10% 5%;
+        text-align: center;
+    }
+    
+    #Holiday_Timetable h1 {
+        text-align: center;
+    }
+    
+    #Holiday_Timetable table {
+        letter-spacing: 2px;
+        border: solid #000;
+    }
+    
+    #Holiday_Timetable td {
+        border: solid #000;
+        padding: 5px;
+        background-color: #f8f8f8;
+    }
+    
+    #Holiday_Timetable th {
+        border: solid #000;
+        padding: 5px;
+        background-color: #AC3347;
+        color: #FFF;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+    }
